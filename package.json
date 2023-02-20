@@ -1,0 +1,13 @@
+{
+  "name": "template-homework-crud",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "author": "Paul Negoescu",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
