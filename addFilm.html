@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Film</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <h1>Add Star Wars Film</h1>
+    <form class="add-film-form">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" />
+      </div>
+      <div>
+        <label for="episode_id">Episode Number</label>
+        <select id="episode_id" name="episode_id">
+          <option value="0">Not and episode</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+        </select>
+      </div>
+      <div>
+        <label for="opening_crawl">Opening Crawl</label>
+        <textarea
+          name="opening_crawl"
+          id="opening_crawl"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div>
+        <label for="director">Director(s)</label>
+        <input type="text" id="director" name="director" />
+      </div>
+      <div>
+        <label for="producer">Producer(s)</label>
+        <input type="text" id="producer" name="producer" />
+      </div>
+      <div>
+        <label for="poster">Poster URL</label>
+        <input type="text" id="poster" name="poster" />
+      </div>
+      <div>
+        <label for="release_date">Release Date</label>
+        <input type="date" id="release_date" name="release_date" />
+      </div>
+      <fieldset>
+        <legend><label for="characters">Characters</label></legend>
+        <div>
+          <span class="selected-item"
+            >Luke Skywalker <button type="button">&times;</button></span
+          >
+        </div>
+        <div>
+          <input
+            type="text"
+            id="characters"
+            name="characters"
+            list="character_list"
+          />
+          <datalist id="character_list">
+            <option data-id="1" value="Luke Skywalker"></option>
+            <option data-id="2" value="R2D2"></option>
+            <option
+              data-id="3"
+              value="Generate this dynamically with data from the backend"
+            ></option>
+          </datalist>
+          <button type="button">Add character</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend><label for="planets">Planets</label></legend>
+        <div>
+          <span class="selected-item"
+            >Tatooine <button type="button">&times;</button></span
+          >
+        </div>
+        <div>
+          <input type="text" id="planets" name="planets" list="planet_list" />
+          <datalist id="planet_list">
+            <option data-id="1" value="Tatooine"></option>
+            <option data-id="2" value="Dantooine"></option>
+            <option
+              data-id="3"
+              value="Generate this dynamically with data from the backend"
+            ></option>
+          </datalist>
+          <button type="button">Add planet</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend><label for="vehicles">Vehicles</label></legend>
+        <div>
+          <span class="selected-item"
+            >AT-AT <button type="button">&times;</button></span
+          >
+        </div>
+        <div>
+          <input
+            type="text"
+            id="vehicles"
+            name="vehicles"
+            list="vehicle_list"
+          />
+          <datalist id="vehicle_list">
+            <option data-id="1" value="AT-AT"></option>
+            <option data-id="2" value="AT-ST"></option>
+            <option
+              data-id="3"
+              value="Generate this dynamically with data from the backend"
+            ></option>
+          </datalist>
+          <button type="button">Add vehicle</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend><label for="species">Species</label></legend>
+        <div>
+          <span class="selected-item"
+            >Wookie <button type="button">&times;</button></span
+          >
+        </div>
+        <div>
+          <input type="text" id="species" name="species" list="species_list" />
+          <datalist id="species_list">
+            <option data-id="1" value="Wookie"></option>
+            <option data-id="2" value="Human"></option>
+            <option
+              data-id="3"
+              value="Generate this dynamically with data from the backend"
+            ></option>
+          </datalist>
+          <button type="button">Add species</button>
+        </div>
+      </fieldset>
+      <div>
+        <button type="submit">Add Film</button>
+      </div>
+    </form>
+  </body>
+</html>
